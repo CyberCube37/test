@@ -1,0 +1,32 @@
+{% extends 'shema.html' %}
+{% block podnaslov %}DA SI MAL ZAMISLS!{% endblock %}
+{% block vsebina %}
+    <div style="text-align: left;">
+    <p>
+     Dobrodošli na najini spletni strani.
+     <br>
+     Za projekt pri programerskem krožku bova bova naredilča spletno aplikacijo, ki ti bo na messenger pošiljala citate profesorjev. Sam boš lahko izbral profesorja in kolikokrat na teden želiš dobivati citate.    
+    </p>
+    <p>Da bova lahko izvedla projekt potrebujeva vašo pomoč. Prosila bi da nama pošljete čimveč citatov profesorjev. Če želite poslati citat se lahko registrirate na najini strani ali pa preko Googla, Facebooka in Twitterja. Citate nama lahko pošljete tudi na zs.
+    </p>
+    <br>
+    <br>
+    <br>
+    <p>
+     <b>Daniel Blažič, Luka Peršolja</b>
+    </p>
+    <p>
+        <form method="POST" id="citat_id">
+            <select name="profesor">
+              <option value="volvo">Volvo</option>
+            </select>
+        <br>
+        <input type="submit" value="Pošlji">
+        <br>
+        <textarea rows="6" cols="50" name="citat" form="citat_id" placeholder="Tukaj vpiši citat">
+        </textarea> 
+        </form>
+    </p>
+    </div>
+{% endblock %}
+
